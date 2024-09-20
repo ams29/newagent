@@ -168,7 +168,7 @@ export default function Page({ params: { chat_id } }: Props) {
         });
         
         setMessages(sortedMessages);
-        // handleSendMessage(searchParam.get("ques") || "");
+        // handleSendMessage(searchParam.get("ques") || "");jj
       }
     };
 
