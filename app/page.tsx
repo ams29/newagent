@@ -21,8 +21,17 @@ export default function ChatPage() {
     return (
       <div className="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-95 z-50">
         <div className="bg-gray-800 text-white rounded-xl shadow-lg p-6 w-full max-w-md mx-4">
-          <h2 className="text-xl font-semibold mb-4 text-center">Mobile Access Unavailable</h2>
-          <p className="text-gray-300 text-center mb-6">We apologize, but this site is currently only available on desktop devices. Please access it from a laptop or desktop computer for the best experience.</p>
+          <h2 className="text-xl font-semibold mb-4 text-center">Mobile Access Limited</h2>
+          <p className="text-gray-300 text-center mb-6">This site is optimized for desktop devices. For the best experience, please access it from a laptop or desktop computer.</p>
+          <div className="flex justify-center space-x-4">
+            <Button
+              onClick={() => setIsMobile(false)}
+              size="lg"
+              className="bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300"
+            >
+              Try it anyway
+            </Button>
+          </div>
         </div>
       </div>
     );
