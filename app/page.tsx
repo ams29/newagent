@@ -10,7 +10,7 @@ export default function ChatPage() {
   const [isMobile, setIsMobile] = useState(false);
   const router = useRouter();
 
-  // Detect if the user is on a mobile device
+  // Detect if the user is on a mobile deviceddeerr
   useEffect(() => {
     const userAgent = typeof window.navigator === "undefined" ? "" : navigator.userAgent;
     const isMobileDevice = /Mobi|Android|iPhone/i.test(userAgent);
